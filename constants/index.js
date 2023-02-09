@@ -1,25 +1,25 @@
 export const exploreDevelopers = [
   {
     id: 'dev-1',
-    imgUrl: '/Morishita1.jpg',
+    imgUrl: '/morishita.jpg',
     title: 'Gabriel Morishita',
     stack: ["Django Rest", "Laravel Octane", "Database's"]
   },
   {
     id: 'dev-2',
-    imgUrl: '/Lucas1.png',
+    imgUrl: '/lucas.png',
     title: 'Lucas Braz',
     stack: ['NodeJS', 'VueJS', 'React']
   },
   {
     id: 'dev-3',
-    imgUrl: '/Luiz.JPG',
+    imgUrl: '/luiz.jpg',
     title: 'Luiz Oliveira',
     stack: ['Javascript', 'Typescript', 'React']
   },
   {
     id: 'dev-4',
-    imgUrl: '/Nicolas1.png',
+    imgUrl: '/nicolas.png',
     title: 'Nicolas Moreira',
     stack: ['Javascript', 'Python', 'Bootstrap']
   },
