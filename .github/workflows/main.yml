@@ -1,0 +1,28 @@
+name: Firebase function deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    # Runs a single command using the runners shell
+    # And of course we need to goto our functions folder to deploy
+    - name: Install npm packages
+      run:
+        npm install
+    # Deploying the functions to firebase
+    - name:  Deploy to Firebase
+      uses: w9jds/firebase-action@master
+      with:
+          args: deploy
+      env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
